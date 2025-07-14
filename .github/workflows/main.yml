@@ -13,7 +13,7 @@ jobs:
         uses: azure/login@v1
         with:
           client-id: fd800f43-0216-48ec-af5b-89d197325c45
-          tenant-id: 9a025095-e37b-4d95-99d7-40ef2b122663
+          tenant-id: azure.training.hacktricks.xyz
           subscription-id: 9a025095-e37b-4d95-99d7-40ef2b122663
           enable-AzPSSession: true
 
