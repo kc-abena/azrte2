@@ -10,18 +10,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Azure login
-        uses: azure/login@v1
+        uses: azure/login@v2
         with:
-          client-id: fd800f43-0216-48ec-af5b-89d197325c45
+          client-id: 3eb70b4a-8736-437d-a6fc-ecab529226e3
           tenant-id: azure.training.hacktricks.xyz
-          subscription-id: 9a025095-e37b-4d95-99d7-40ef2b122663
+          subscription-id: bb001923-1d4e-47d0-864b-32f9afbdb32d
           enable-AzPSSession: true
 
       - name: Download flag
         run: |
           az storage account list
           az storage blob download \
-            --account-name iamazurelab374236b85 \
+            --account-name iamazurelab362eff7a6 \
             --container-name flag \
             --name flag.txt \
             --file flag.txt \
